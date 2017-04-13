@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<suite name="Regression Suite">
+<listeners>
+<listener class-name="com.mycompany.demoqt.customelistener.Listner"></listener>
+</listeners>
+<test name="Test">
+
+   <classes>
+     <class name="com.mycompany.demoqt.testscripts.CreateAccountAndSignInTest"></class>
+     
+   </classes>
+</test> <!-- Test -->
+</suite><!-- suite -->
