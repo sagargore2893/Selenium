@@ -5,10 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CustomShoes {
+import com.mycompany.demoqt.testbase.TestBase;
 
-	WebDriver driver;
-	
+public class CustomShoes extends TestBase {
+
 	/*
 	 * loactors
 	 */

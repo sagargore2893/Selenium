@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CustomApparel {
+import com.mycompany.demoqt.testbase.TestBase;
+
+public class CustomApparel extends TestBase {
 	
-	WebDriver driver;
 
 	/*
 	 * Locators

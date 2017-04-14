@@ -5,10 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class QteeRep {
-	
-	WebDriver driver;
+import com.mycompany.demoqt.testbase.TestBase;
 
+public class QteeRep extends TestBase{
 	
 	/*
 	 * Locators
@@ -80,10 +79,10 @@ public class QteeRep {
 		socialchannels.sendKeys(SocialChannels);
 	}
 	
-	public void verifyCheckbox()   //Incomplete logic and method
-	{
-		checkbox.isSelected();
-	}
+//	public void verifyCheckbox()   //Incomplete logic and method
+//	{
+//		checkbox.isSelected();
+//	}
 	
 	public void clickOnSubmit()
 	{

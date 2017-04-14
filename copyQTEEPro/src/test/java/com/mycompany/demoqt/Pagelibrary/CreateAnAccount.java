@@ -5,8 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CreateAnAccount {
-	WebDriver driver;
+import com.mycompany.demoqt.testbase.TestBase;
+
+public class CreateAnAccount extends TestBase{
+	
 	
 	@FindBy(css="#accountContainer>h2")
 	private WebElement createaccounttext;
@@ -29,8 +31,8 @@ public class CreateAnAccount {
 	@FindBy(css=".editor-label>input#ConfirmPassword")
 	private WebElement confirmpassword;
 	
-	//select security question remaining
-	@FindBy()
+	
+	@FindBy(xpath="//div[@class='chosen-drop']/ul/li[7]")
 	private WebElement selectquestion;
 	
 	@FindBy(css=".editor-label>input#SecurityAnswer")
@@ -56,10 +58,10 @@ public class CreateAnAccount {
 	
 	
 	
-	public void verifyCreateAccontPage()    //logic is incomplete
-	{
-		createaccounttext.isDisplayed();
-	}
+//	public void verifyCreateAccontPage()    //logic is incomplete
+//	{
+//		createaccounttext.isDisplayed();
+//	}
 	
 	public void enterFirstName(String FirstName)
 	{
@@ -93,7 +95,7 @@ public class CreateAnAccount {
 	
 	public void selectSecurityQuestion()
 	{
-		//incomplete method
+		selectquestion.click();
 	}
 	
 	public void enterSecurityAnswer(String SecurityAnswer)
@@ -101,10 +103,10 @@ public class CreateAnAccount {
 		securityanswer.sendKeys(SecurityAnswer);
 	}
 	
-	public void verifyCheckbox()   //logic is incomplete
-	{
-		checkbox.isSelected();
-	}
+//	public void verifyCheckbox()   //logic is incomplete
+//	{
+//		checkbox.isSelected();
+//	}
 	
 	public void clickOnCreateAccountButton()
 	{
