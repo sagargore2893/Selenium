@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Flights TestSuite]">
+  <test name="Flights TestSuite(failed)">
+    <classes>
+      <class name="com.trip.flights.SearchFlightsClass">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="browserQuit"/>
+          <include name="testSearchFlights"/>
+        </methods>
+      </class> <!-- com.trip.flights.SearchFlightsClass -->
+    </classes>
+  </test> <!-- Flights TestSuite(failed) -->
+</suite> <!-- Failed suite [Flights TestSuite] -->

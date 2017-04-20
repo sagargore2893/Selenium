@@ -1,0 +1,9 @@
+<suite name="Hotels TestSuite">
+    <test verbose="2" name="Hotels TestSuite">
+        <parameter name="browser" value="firefox" />
+        <parameter name="port" value="4444" /> 
+        <classes>
+            <class name="com.silicus.hotels.HotelBookingClass"/>
+        </classes>
+    </test> 
+</suite> 

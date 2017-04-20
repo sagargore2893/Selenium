@@ -1,0 +1,9 @@
+<suite name="Flights TestSuite"  parallel="tests" thread-count="5">
+    <test verbose="1" name="Flights TestSuite-FF">
+        <parameter name="browser" value="firefox" />
+        <parameter name="port" value="4444" />
+        <classes>
+            <class name="com.silicus.flights.SearchFlightsClass"/>
+        </classes>
+    </test> 
+</suite> 
