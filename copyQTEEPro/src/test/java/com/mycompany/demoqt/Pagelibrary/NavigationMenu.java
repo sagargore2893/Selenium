@@ -1,4 +1,4 @@
-package com.mycompany.demoqt.logs;
+package com.mycompany.demoqt.Pagelibrary;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
