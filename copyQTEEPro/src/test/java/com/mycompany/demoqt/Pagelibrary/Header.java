@@ -11,8 +11,8 @@ public class Header extends TestBase {
 
 	//WebDriver driver;
 	
-	@FindBy(css=".siteToolbar>div>a#loginLink")
-	private WebElement account;
+	@FindBy(xpath="//a[@href='/account/login']/i")
+	private WebElement login;
 
 	public Header(WebDriver driver) {
 		this.driver = driver;
@@ -21,7 +21,7 @@ public class Header extends TestBase {
 	
 	public void clickOnAccount() throws InterruptedException
 	{
-		account.click();
+		login.click();
 		Thread.sleep(5000);
 	}
 	

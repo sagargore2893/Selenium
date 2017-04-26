@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.silicus.flights.SearchFlightsClass">
+      <class name="com.mycompany.demoqt.testscripts.CreateAccountAndSignInTest">
         <methods>
-          <include name="browserQuit"/>
-          <include name="testSearchFlights"/>
-          <include name="browserLaunch"/>
+          <include name="testValidation"/>
+          <include name="testLoginPageIsDisplayed"/>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.silicus.flights.SearchFlightsClass -->
+      </class> <!-- com.mycompany.demoqt.testscripts.CreateAccountAndSignInTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

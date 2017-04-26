@@ -62,6 +62,10 @@ public class TestBase {
 		Thread.sleep(5000);
 	}
 	
+	public void browserQuite()
+	{
+		driver.quit();
+	}
 	
 
 	
