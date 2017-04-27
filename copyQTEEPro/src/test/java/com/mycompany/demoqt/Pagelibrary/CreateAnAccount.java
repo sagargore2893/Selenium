@@ -10,46 +10,45 @@ import com.mycompany.demoqt.testbase.TestBase;
 public class CreateAnAccount extends TestBase{
 	
 	
-	@FindBy(css="#accountContainer>h2")
-	private WebElement createaccounttext;
+	@FindBy(css="#create-customer>div>h2.title")
+	private WebElement createaccountheading;
 
-	@FindBy(css=".editor-label>input#FirstName")
+	@FindBy(xpath="//input[@id='first_name']")
 	private WebElement firstname;
 
-	@FindBy(css=".editor-label>input#LastName")
+	@FindBy(xpath="//input[@id='last_name']")
 	private WebElement lastname;
 
-	@FindBy(css=".editor-label>input#Email")
+	@FindBy(xpath="//input[@id='email']")
 	private WebElement email;
 
-	@FindBy(css=".editor-label>input#ConfirmEmail")
-	private WebElement confirmemail;
- 
-	@FindBy(css=".editor-label>input#Password")
+	@FindBy(xpath="//input[@id='password']")
 	private WebElement password;
 
-	@FindBy(css=".editor-label>input#ConfirmPassword")
-	private WebElement confirmpassword;
+	@FindBy(css=".action_bottom>input.btn.btn-success")
+	private WebElement createbutton;
 	
+//	@FindBy(css=".editor-label>input#ConfirmEmail")
+//	private WebElement confirmemail;
+
+//	@FindBy(css=".editor-label>input#ConfirmPassword")
+//	private WebElement confirmpassword;
+		
+//	@FindBy(xpath="//div[@class='chosen-drop']/ul/li[7]")
+//	private WebElement selectquestion;
 	
-	@FindBy(xpath="//div[@class='chosen-drop']/ul/li[7]")
-	private WebElement selectquestion;
+//	@FindBy(css=".editor-label>input#SecurityAnswer")
+//	private WebElement securityanswer;
 	
-	@FindBy(css=".editor-label>input#SecurityAnswer")
-	private WebElement securityanswer;
+//	@FindBy(css=".rememberMe>label>div")
+//	private WebElement checkbox;
 	
-	@FindBy(css=".rememberMe>label>div")
-	private WebElement checkbox;
-	
-	@FindBy(css=".submit>input")
-	private WebElement createaccountbutton;
-	
-	@FindBy(xpath="//div/a[@href='https://qtee.com/Secure/Account/GetFacebookUrl']")
-	private WebElement facebookloginbutton;
+//	@FindBy(xpath="//div/a[@href='https://qtee.com/Secure/Account/GetFacebookUrl']")
+//	private WebElement facebookloginbutton;
 	
 	
 	/*
-	 * CONSTRUCTOR
+	 * CONSTRUCTOR to initialize the object
 	 */
 	public CreateAnAccount(WebDriver driver) {
 		this.driver = driver;
@@ -78,44 +77,39 @@ public class CreateAnAccount extends TestBase{
 		email.sendKeys(EmailID);
 	}
 	
-	public void enterConfirmEmailId(String ConfirmEmailID)
-	{
-		confirmemail.sendKeys(ConfirmEmailID);
-	}
-	
 	public void  enterPassword(String Password)
 	{
 		password.sendKeys(Password);
 	}
-	
-	public void enterConfirmPassword(String ConfirmPassword)
+	public void clickOnCreateButton()
 	{
-		confirmpassword.sendKeys(ConfirmPassword);
+		createbutton.click();
 	}
 	
-	public void selectSecurityQuestion()
-	{
-		selectquestion.click();
-	}
 	
-	public void enterSecurityAnswer(String SecurityAnswer)
-	{
-		securityanswer.sendKeys(SecurityAnswer);
-	}
-	
+//	public void enterConfirmEmailId(String ConfirmEmailID)
+//	{
+//		confirmemail.sendKeys(ConfirmEmailID);
+//	}
+//	public void enterConfirmPassword(String ConfirmPassword)
+//	{
+//		confirmpassword.sendKeys(ConfirmPassword);
+//	}
+//	public void selectSecurityQuestion()
+//	{
+//		selectquestion.click();
+//	}
+//	public void enterSecurityAnswer(String SecurityAnswer)
+//	{
+//		securityanswer.sendKeys(SecurityAnswer);
+//	}
 //	public void verifyCheckbox()   //logic is incomplete
 //	{
 //		checkbox.isSelected();
 //	}
-	
-	public void clickOnCreateAccountButton()
-	{
-		createaccountbutton.click();
-	}
-	
-	public void clickOnFacebookLoginButton()
-	{
-		facebookloginbutton.click();
-	}
+//	public void clickOnFacebookLoginButton()
+//	{
+//		facebookloginbutton.click();
+//	}
 
 }
