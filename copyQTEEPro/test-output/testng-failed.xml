@@ -8,7 +8,6 @@
           <include name="testInvalidRecoverPassword"/>
           <include name="setUp"/>
           <include name="testLogIn"/>
-          <include name="testFieldValidation"/>
           <include name="testLoginPageIsDisplayed"/>
           <include name="closeBrowser"/>
           <include name="testValidRecoverPassword"/>
