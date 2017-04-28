@@ -5,12 +5,9 @@
     <classes>
       <class name="com.mycompany.demoqt.testscripts.TestLogin">
         <methods>
-          <include name="testInvalidRecoverPassword"/>
           <include name="setUp"/>
           <include name="testLogIn"/>
-          <include name="testLoginPageIsDisplayed"/>
           <include name="closeBrowser"/>
-          <include name="testValidRecoverPassword"/>
         </methods>
       </class> <!-- com.mycompany.demoqt.testscripts.TestLogin -->
     </classes>

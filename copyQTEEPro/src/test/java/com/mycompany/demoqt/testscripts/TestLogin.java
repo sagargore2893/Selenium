@@ -47,7 +47,7 @@ public class TestLogin extends TestBase{
 	}
 	
 	
-	@Test
+	@Test(priority=0)
 	public void testLogIn() throws InterruptedException
 	{
 		Header header = new Header(driver);
