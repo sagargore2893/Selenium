@@ -32,11 +32,16 @@ public class LogIn extends TestBase {
 	
 	
 	
+	/*constructor*/
 	public LogIn(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
 	}
 	
+	
+	
+	
+	/*Methods*/
 	public void enterEmail(String Email)
 	{
 		email.sendKeys(Email);
@@ -52,10 +57,17 @@ public class LogIn extends TestBase {
 		signin.click();
 	}
 	
+	
+	public void clickOnCreateAnAccount()
+	{
+		createaccount.click();
+	}
+	
+	
 	public void recoverPassword(String RecoverEmail)
 	{
 		recoveremail.sendKeys(RecoverEmail);
 		submit.click();
 	}
-
+	
 }
