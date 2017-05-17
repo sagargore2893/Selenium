@@ -1,5 +1,6 @@
 package com.mycompany.demoqt.Pagelibrary;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,36 +11,32 @@ import com.mycompany.demoqt.testbase.TestBase;
 public class NavigationMenu extends TestBase{
 
 	//locators for main navigation menu
-	@FindBy(xpath="//nav/ul/li[1]")
-	private WebElement shopcollections;
+	@FindBy(xpath="//ul[@class='nav nav-pills']/li[1]")
+	private WebElement shopdropdown;
 
 
-	@FindBy(xpath="//nav/ul/li[2]")
-	private WebElement shoes;
+	@FindBy(xpath="//ul[@class='nav nav-pills']/li[2]")
+	private WebElement appareldropdown;
 	
 
-	@FindBy(xpath="//nav/ul/li[3]")
-	private WebElement sandals;
+	@FindBy(xpath="//ul[@class='nav nav-pills']/li[3]")
+	private WebElement shoesdropdown;
 	
 
-	@FindBy(xpath="//nav/ul/li[4]")
-	private WebElement apparel;
+	@FindBy(xpath="//ul[@class='nav nav-pills']/li[4]")
+	private WebElement accessoriesdropdown;
 	
 
-	@FindBy(xpath="//nav/ul/li[5]")
-	private WebElement accessories;
+	@FindBy(xpath="//ul[@class='nav nav-pills']/li[5]")
+	private WebElement createyourown;
 	
 
-	@FindBy(xpath="//nav/ul/li[6]")
-	private WebElement shopinstagram;
+	@FindBy(xpath="//ul[@class='nav nav-pills']/li[6]")
+	private WebElement qteerep;
 	
 
-	@FindBy(xpath="//nav/ul/li[7]")
-	private WebElement sale;
-	
-
-	@FindBy(xpath="//nav/ul/li[8]")
-	private WebElement collaborations;
+	@FindBy(xpath="//ul[@class='nav nav-pills']/li[7]")
+	private WebElement ourcharity;
 	
 	
 	/*
@@ -49,51 +46,110 @@ public class NavigationMenu extends TestBase{
 		this.driver=driver;
 		PageFactory.initElements(this.driver, this);
 	}
+	
 	/*
-	 * Methods for main navigation menu
+	 * Select options present under SHOP menu
 	 */
-
-	public void clickOnShopCollections()
+	public void clickOnBestSellers()
 	{
-		shopcollections.click();
+		shopdropdown.click();
+		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[1]/ul/li[1]")).click();
+	}
+	public void clickOnBeachBabe()
+	{
+		shopdropdown.click();
+		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[1]/ul/li[2]")).click();
+	}
+	public void clickOnFestivalBound()
+	{
+		shopdropdown.click();
+		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[1]/ul/li[3]")).click();
+	}
+	public void clickOnFoodie()
+	{
+		shopdropdown.click();
+		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[1]/ul/li[4]")).click();
 	}
 	
-	public void clickOnShoes()
+	/*
+	 *  Select options present under APPAREL menu
+	 */
+	public void clickOnGraphicTees()
 	{
-		shoes.click();
+		appareldropdown.click();
+		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[2]/ul/li[1]")).click();
+	}
+	public void clickOnSwetShirts()
+	{
+		appareldropdown.click();
+		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[2]/ul/li[2]")).click();
+	}
+	public void clickOnBoyShirts()
+	{
+		appareldropdown.click();
+		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[2]/ul/li[3]")).click();
 	}
 	
+	/*
+	 * Select options present under SHOES menu
+	 */
+	public void clickOnConverseLowTop()
+	{
+		shoesdropdown.click();
+		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[3]/ul/li[1]")).click();
+	}
 	public void clickOnSandals()
 	{
-		sandals.click();
+		shoesdropdown.click();
+		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[3]/ul/li[2]")).click();
 	}
 	
-	public void clickOnApparel()
+	/*
+	 * Select options present under ACCESSORIES menu.
+	 */
+	public void clickOnCanvasToteBags()
 	{
-		apparel.click();
+		accessoriesdropdown.click();
+		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[4]/ul/li[1]")).click();
 	}
-	
-	public void clickOnAccessories()
+	public void clickOnPhoneCases()
 	{
-		accessories.click();
+		accessoriesdropdown.click();
+		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[4]/ul/li[2]")).click();
 	}
-	
-	public void clickOnShopInstagram()
+	public void clickOnJwellary()
 	{
-		shopinstagram.click();
+		accessoriesdropdown.click();
+		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[4]/ul/li[3]")).click();
 	}
-	
-	public void clickOnSale()
+	public void clickOnPillows()
 	{
-		sale.click();
+		accessoriesdropdown.click();
+		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[4]/ul/li[4]")).click();
 	}
 	
-	public void Collaborations()
+	/*
+	 * Click on CREATE YOUR OWN menu
+	 */
+	public void clickOnCreateYourOwn()
 	{
-		collaborations.click();
+		createyourown.click();
 	}
 	
+	/*
+	 * Click ON QTEE REP menu
+	 */
 	
-	//hover-over methods 
+	public void clickOnQteeRep()
+	{
+		qteerep.click();
+	}
 	
+	/*
+	 * Click on OUR CHARITY menu
+	 */
+	public void clickOnOurCharity()
+	{
+		ourcharity.click();
+	}
 }

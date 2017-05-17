@@ -13,17 +13,17 @@ public class Footer {
 	 */
 	
 	//!!!!!NEED HELP!!!!!!!!
-	@FindBy(xpath="//div/dl[1]/dd[1]")
-	private WebElement contactus;
+//	@FindBy(xpath="//div/dl[1]/dd[1]")
+//	private WebElement contactus;
 	
 	@FindBy(xpath="//div/dl[1]/dd[2]")
 	private WebElement returnsAndExchange;
 	
-	@FindBy(xpath="//div/dl[1]/dd[3]")
-	private WebElement shippingInfo;
+//	@FindBy(xpath="//div/dl[1]/dd[3]")
+//	private WebElement shippingInfo;
 	
-	@FindBy(xpath="//div/dl[1]/dd[4]")
-	private WebElement orderStatus;
+//	@FindBy(xpath="//div/dl[1]/dd[4]")
+//	private WebElement orderStatus;
 	
 	//!!!!!!QUICKQ's
 	@FindBy(xpath="//div/dl[2]/dd[1]")
@@ -37,22 +37,22 @@ public class Footer {
 	private WebElement emailSettings;
 	
 	
-	@FindBy(xpath="//div/dl[2]/dd[4]")
-	private WebElement howToCustomize;
+//	@FindBy(xpath="//div/dl[2]/dd[4]")
+//	private WebElement howToCustomize;
 	
 	
 	//!!!!!!!!COMPANY!!!!!!!!!!
-	@FindBy(xpath="//div/dl[3]/dd[1]")
-	private WebElement aboutUs;
+//	@FindBy(xpath="//div/dl[3]/dd[1]")
+//	private WebElement aboutUs;
 
 	@FindBy(xpath="//div/dl[3]/dd[2]")
 	private WebElement affiliates;
 
-	@FindBy(xpath="//div/dl[3]/dd[3]")
-	private WebElement feedback;
+//	@FindBy(xpath="//div/dl[3]/dd[3]")
+//	private WebElement feedback;
 
-	@FindBy(xpath="//div/dl[3]/dd[4]")
-	private WebElement community;
+//	@FindBy(xpath="//div/dl[3]/dd[4]")
+//	private WebElement community;
 
 	@FindBy(xpath="//div/dl[3]/dd[5]")
 	private WebElement blog;
@@ -104,26 +104,26 @@ public class Footer {
 	 * Methods 
 	 */
 	
-	public void clickOnConatctUs()
-	{
-		contactus.click();
-	}
-	
-	public void clickOnReturnsAndExchanges()
-	{
-		returnsAndExchange.click();
-	}
-	
-	public void clickOnShippingInfo()
-	{
-		shippingInfo.click();
-	}
-	
-	public void clickOnOrderStatus()
-	{
-		orderStatus.click();
-	}
-	
+//	public void clickOnConatctUs()
+//	{
+//		contactus.click();
+//	}
+//	
+//	public void clickOnReturnsAndExchanges()
+//	{
+//		returnsAndExchange.click();
+//	}
+//	
+//	public void clickOnShippingInfo()
+//	{
+//		shippingInfo.click();
+//	}
+//	
+//	public void clickOnOrderStatus()
+//	{
+//		orderStatus.click();
+//	}
+//	
 	public void clickOnFaq()
 	{
 		faq.click();
@@ -139,30 +139,30 @@ public class Footer {
 		emailSettings.click();
 	}
 	
-	public void clickOnHowtoCustomize()
-	{
-		howToCustomize.click();
-	}
-	
-	public void clickOnAboutUs()
-	{
-		aboutUs.click();
-	}
-	
-	public void clickOnAffiliates()
-	{
-		affiliates.click();
-	}
-	
-	public void clickOnFeedback()
-	{
-		feedback.click();
-	}
-	
-	public void clickOnCommunity(){
-		community.click();
-	}
-	
+//	public void clickOnHowtoCustomize()
+//	{
+//		howToCustomize.click();
+//	}
+//	
+//	public void clickOnAboutUs()
+//	{
+//		aboutUs.click();
+//	}
+//	
+//	public void clickOnAffiliates()
+//	{
+//		affiliates.click();
+//	}
+//	
+//	public void clickOnFeedback()
+//	{
+//		feedback.click();
+//	}
+//	
+//	public void clickOnCommunity(){
+//		community.click();
+//	}
+//	
 	public void clickOnBlog()
 	{
 		blog.click();

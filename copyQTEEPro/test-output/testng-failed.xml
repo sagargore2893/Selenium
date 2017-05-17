@@ -9,7 +9,6 @@
           <include name="testCreateAccount_With_Existing_EmailID"/>
           <include name="testCreateAccount_With_New_Email_Id"/>
           <include name="closeBrowser"/>
-          <include name="testCreateAnAccountPageIsDisplayed"/>
         </methods>
       </class> <!-- com.mycompany.demoqt.testscripts.TestCreateAccount -->
     </classes>

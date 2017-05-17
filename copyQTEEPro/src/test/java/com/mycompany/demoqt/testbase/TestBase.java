@@ -59,7 +59,8 @@ public class TestBase {
 	
 	public void closePopUp() throws InterruptedException
 	{
-		driver.findElement(By.cssSelector("#lpModalClose")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.cssSelector(".bk-padding-cbox>button.bk-coupon-box_close")).click();
 		Thread.sleep(5000);
 	}
 	

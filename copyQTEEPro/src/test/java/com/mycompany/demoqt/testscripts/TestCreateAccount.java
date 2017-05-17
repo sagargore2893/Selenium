@@ -20,16 +20,15 @@ public class TestCreateAccount extends TestBase {
 	public void setUp() throws IOException, InterruptedException
 	{
 		init();
-	    //closePopUp();
+		closePopUp();
 	}
 	
-	@Test
+	@Test(priority=0)
 	public void testCreateAnAccountPageIsDisplayed() throws InterruptedException
 	{
 		Header header = new Header(driver);
 		header.clickOnAccount();
 		LogIn login = new LogIn(driver);
-		login.clickOnSignIn();
 		login.clickOnCreateAnAccount();
 		Assert.assertEquals("Create Account – QTEE", driver.getTitle());
 	}
@@ -40,7 +39,6 @@ public class TestCreateAccount extends TestBase {
 		Header header = new Header(driver);
 		header.clickOnAccount();
 		LogIn login = new LogIn(driver);
-		login.clickOnSignIn();
 		login.clickOnCreateAnAccount();
 		createaccount = new CreateAnAccount(driver);
 		createaccount.enterFirstName("TEST");
@@ -49,8 +47,9 @@ public class TestCreateAccount extends TestBase {
 		createaccount.enterPassword("test123");
 		createaccount.clickOnCreateButton();
 		Assert.assertEquals("Challenge – QTEE", driver.getTitle());
-		//driver.findElement(By.xpath("//div/div[3]/div[1]/div/div/span[@id='recaptcha-anchor']")).click();
-		Thread.sleep(8000);
+		Thread.sleep(60000);
+		driver.findElement(By.cssSelector(".recaptcha-checkbox-checkmark")).click();
+		Thread.sleep(60000);
 		driver.findElement(By.xpath("//input[@class='shopify-challenge__button btn']")).click();
 		Assert.assertEquals("Account – QTEE",driver.getTitle());
 	}
@@ -63,7 +62,6 @@ public class TestCreateAccount extends TestBase {
 		Header header = new Header(driver);
 		header.clickOnAccount();
 		LogIn login = new LogIn(driver);
-		login.clickOnSignIn();
 		login.clickOnCreateAnAccount();
 		createaccount = new CreateAnAccount(driver);
 		createaccount.enterFirstName("TEST");
@@ -72,8 +70,9 @@ public class TestCreateAccount extends TestBase {
 		createaccount.enterPassword("test123");
 		createaccount.clickOnCreateButton();
 		Assert.assertEquals("Challenge – QTEE", driver.getTitle());
-		//driver.findElement(By.xpath("//div/div[3]/div[1]/div/div/span[@id='recaptcha-anchor']")).click();
-		Thread.sleep(8000);
+		Thread.sleep(60000);
+		driver.findElement(By.cssSelector(".recaptcha-checkbox-checkmark")).click();
+		Thread.sleep(60000);
 		driver.findElement(By.xpath("//input[@class='shopify-challenge__button btn']")).click();
 		Assert.assertEquals("Create Account – QTEE", driver.getTitle());
 		Assert.assertEquals("This email address is already associated with an account. If this account is yours, you can", driver.findElement(By.xpath("//div[@class='errors']/ul/li")));
