@@ -1,21 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28797" started-at="2017-05-17T09:01:37Z" finished-at="2017-05-17T09:02:06Z">
+  <suite name="Default suite" duration-ms="69408" started-at="2017-05-30T08:40:51Z" finished-at="2017-05-30T08:42:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28797" started-at="2017-05-17T09:01:37Z" finished-at="2017-05-17T09:02:06Z">
-      <class name="com.mycompany.demoqt.testscripts.TestDropdown">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mycompany.demoqt.testscripts.TestDropdown@91161c7]" name="setUp" is-config="true" duration-ms="25709" started-at="2017-05-17T14:31:37Z" finished-at="2017-05-17T14:32:02Z">
+    <test name="Default test" duration-ms="69408" started-at="2017-05-30T08:40:51Z" finished-at="2017-05-30T08:42:00Z">
+      <class name="com.mycompany.demoqt.testscripts.TestSortPageValidation">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mycompany.demoqt.testscripts.TestSortPageValidation@604ed9f0]" name="setUp" is-config="true" duration-ms="13191" started-at="2017-05-30T14:10:51Z" finished-at="2017-05-30T14:11:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testShopoption()[pri:0, instance:com.mycompany.demoqt.testscripts.TestDropdown@91161c7]" name="testShopoption" duration-ms="3041" started-at="2017-05-17T14:32:02Z" finished-at="2017-05-17T14:32:06Z">
+        <test-method status="PASS" signature="test_create_your_own_page_validation()[pri:0, instance:com.mycompany.demoqt.testscripts.TestSortPageValidation@604ed9f0]" name="test_create_your_own_page_validation" duration-ms="9297" started-at="2017-05-30T14:11:04Z" finished-at="2017-05-30T14:11:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testShopoption -->
-      </class> <!-- com.mycompany.demoqt.testscripts.TestDropdown -->
+        </test-method> <!-- test_create_your_own_page_validation -->
+        <test-method status="PASS" signature="test_our_charity_page_validation()[pri:0, instance:com.mycompany.demoqt.testscripts.TestSortPageValidation@604ed9f0]" name="test_our_charity_page_validation" duration-ms="2307" started-at="2017-05-30T14:11:13Z" finished-at="2017-05-30T14:11:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_our_charity_page_validation -->
+        <test-method status="PASS" signature="test_shop_instagram_page_validation()[pri:0, instance:com.mycompany.demoqt.testscripts.TestSortPageValidation@604ed9f0]" name="test_shop_instagram_page_validation" duration-ms="1561" started-at="2017-05-30T14:11:15Z" finished-at="2017-05-30T14:11:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_shop_instagram_page_validation -->
+        <test-method status="PASS" signature="test_sort_page_validation_under_Accessories_dropdpwn_option()[pri:0, instance:com.mycompany.demoqt.testscripts.TestSortPageValidation@604ed9f0]" name="test_sort_page_validation_under_Accessories_dropdpwn_option" duration-ms="13880" started-at="2017-05-30T14:11:17Z" finished-at="2017-05-30T14:11:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_sort_page_validation_under_Accessories_dropdpwn_option -->
+        <test-method status="PASS" signature="test_sort_page_validation_under_Apparel_dropdown_option()[pri:0, instance:com.mycompany.demoqt.testscripts.TestSortPageValidation@604ed9f0]" name="test_sort_page_validation_under_Apparel_dropdown_option" duration-ms="6321" started-at="2017-05-30T14:11:31Z" finished-at="2017-05-30T14:11:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_sort_page_validation_under_Apparel_dropdown_option -->
+        <test-method status="PASS" signature="test_sort_page_validation_under_Shoes_dropdown_option()[pri:0, instance:com.mycompany.demoqt.testscripts.TestSortPageValidation@604ed9f0]" name="test_sort_page_validation_under_Shoes_dropdown_option" duration-ms="13315" started-at="2017-05-30T14:11:37Z" finished-at="2017-05-30T14:11:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_sort_page_validation_under_Shoes_dropdown_option -->
+        <test-method status="PASS" signature="test_sort_page_validation_under_Shop_dropdown_option()[pri:0, instance:com.mycompany.demoqt.testscripts.TestSortPageValidation@604ed9f0]" name="test_sort_page_validation_under_Shop_dropdown_option" duration-ms="8720" started-at="2017-05-30T14:11:50Z" finished-at="2017-05-30T14:11:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_sort_page_validation_under_Shop_dropdown_option -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.mycompany.demoqt.testscripts.TestSortPageValidation@604ed9f0]" name="closeBrowser" is-config="true" duration-ms="783" started-at="2017-05-30T14:11:59Z" finished-at="2017-05-30T14:12:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.mycompany.demoqt.testscripts.TestSortPageValidation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

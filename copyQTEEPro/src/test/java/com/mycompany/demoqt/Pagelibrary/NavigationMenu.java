@@ -84,7 +84,7 @@ public class NavigationMenu extends TestBase{
 		appareldropdown.click();
 		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[2]/ul/li[2]")).click();
 	}
-	public void clickOnBoyShirts()
+	public void clickOnBoyShorts()
 	{
 		appareldropdown.click();
 		driver.findElement(By.xpath("//ul[@class='nav nav-pills']/li[2]/ul/li[3]")).click();

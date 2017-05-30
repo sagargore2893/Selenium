@@ -21,7 +21,7 @@ public class TestLogin extends TestBase{
 	public void setUp() throws IOException, InterruptedException
 	{
 		init();
-	    closePopUp();
+	    //closePopUp();
 	}
 	
 	@Test

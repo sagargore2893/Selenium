@@ -19,11 +19,12 @@ public class TestBase {
 	public FileInputStream FI;
 	public WebDriver driver;
 	
-	public void init() throws IOException
+	public void init() throws IOException, InterruptedException
 	{
 		loadPropertiesFile();
 		selectBrowser(Repositary.getProperty("browser"));
-		driver.get(Repositary.getProperty("url"));	
+		driver.get(Repositary.getProperty("url"));
+		Thread.sleep(5000);
 	}
 	
 	public void loadPropertiesFile() throws IOException
