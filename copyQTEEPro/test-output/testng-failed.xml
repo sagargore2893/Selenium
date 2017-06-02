@@ -3,18 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.mycompany.demoqt.testscripts.TestSortPageValidation">
+      <class name="com.mycompany.demoqt.testscripts.TestCreateAccount">
         <methods>
           <include name="setUp"/>
-          <include name="test_sort_page_validation_under_Accessories_dropdpwn_option"/>
-          <include name="test_sort_page_validation_under_Apparel_dropdown_option"/>
+          <include name="testCreateAccount_With_Existing_EmailID"/>
+          <include name="testCreateAccount_With_New_Email_Id"/>
           <include name="closeBrowser"/>
-          <include name="test_shop_instagram_page_validation"/>
-          <include name="test_sort_page_validation_under_Shop_dropdown_option"/>
-          <include name="test_sort_page_validation_under_Shoes_dropdown_option"/>
-          <include name="test_our_charity_page_validation"/>
+          <include name="testCreateAnAccountPageIsDisplayed"/>
         </methods>
-      </class> <!-- com.mycompany.demoqt.testscripts.TestSortPageValidation -->
+      </class> <!-- com.mycompany.demoqt.testscripts.TestCreateAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

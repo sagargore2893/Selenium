@@ -7,11 +7,13 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.mycompany.demoqt.Pagelibrary.Header;
 import com.mycompany.demoqt.Pagelibrary.LogIn;
 import com.mycompany.demoqt.testbase.TestBase;
+@Listeners(com.mycompany.demoqt.customelistener.Listner.class)
 
 public class TestLogin extends TestBase{
 

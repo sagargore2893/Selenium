@@ -5,10 +5,13 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.mycompany.demoqt.Pagelibrary.NavigationMenu;
 import com.mycompany.demoqt.testbase.TestBase;
+
+@Listeners(com.mycompany.demoqt.customelistener.Listner.class)
 
 public class TestSortPageValidation extends TestBase{
 	NavigationMenu navigation ;

@@ -18,7 +18,7 @@ import com.mycompany.demoqt.testbase.TestBase;
 public class Listner extends TestBase implements ITestListener{
 
 	public void onTestStart(ITestResult result) {
-		Reporter.log("Test started running" + result.getMethod().getMethodName() +"at" + result.getEndMillis());
+		Reporter.log("Test started running :  " + result.getName(),true);
 		
 	}
 
@@ -33,8 +33,12 @@ public class Listner extends TestBase implements ITestListener{
 			String customeLocation = "//src//test//java//com//mycompany//demoqt//screenshots//";   //location for captured screenshots
 			// name for captured screenshot with date and time 
 			String failureImageFileName = userDirector+customeLocation + new SimpleDateFormat("MM-dd-yyyy_HH-ss").format( new GregorianCalendar().getTime())+"-"+result.getMethod().getMethodName()+".png"; 
+			
 			//take failure screenshot at run time
-			File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);  //(TakesScreenshot) driver --- driver is casting to TakesScreenshot: In selenium no direct method to take screenshot hence we have to cast our driver
+			
+			//(TakesScreenshot) driver --- driver is casting to TakesScreenshot: In selenium no direct method to take screenshot hence we have to cast our driver
+			
+			File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);  
 			try
 			{
 				//copy captured screenshot to required location with the help of FileUtils
