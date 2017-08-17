@@ -3,15 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.mycompany.demoqt.testscripts.TestCreateAccount">
+      <class name="com.mycompany.demoqt.testscripts.DragAndDrop">
         <methods>
-          <include name="setUp"/>
-          <include name="testCreateAccount_With_Existing_EmailID"/>
-          <include name="testCreateAccount_With_New_Email_Id"/>
-          <include name="closeBrowser"/>
-          <include name="testCreateAnAccountPageIsDisplayed"/>
+          <include name="drag"/>
         </methods>
-      </class> <!-- com.mycompany.demoqt.testscripts.TestCreateAccount -->
+      </class> <!-- com.mycompany.demoqt.testscripts.DragAndDrop -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
